@@ -107,7 +107,6 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     height: 100%;
-    cursor: pointer;
 
 }
 
@@ -319,7 +318,7 @@ nav {
 .about-image {
     width: 350px;
     border-radius: 10px;
-    margin-left: 75px;
+    margin-left: 55px;
 }
 
 .about-text h2 {

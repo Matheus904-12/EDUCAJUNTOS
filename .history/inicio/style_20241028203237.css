@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #3586ff;
+    background-color: ##3586ff;
     color: #fff;
     padding: 20px;
     display: flex;
@@ -107,7 +107,6 @@ nav {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     height: 100%;
-    cursor: pointer;
 
 }
 
@@ -300,71 +299,4 @@ nav {
     100% {
         background-positon-x: 0px;
     }
-}
-
-/* Estilo para a seção Sobre Nós */
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.about-image {
-    width: 350px;
-    border-radius: 10px;
-    margin-left: 75px;
-}
-
-.about-text h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    padding: 10px 80px;
-}
-
-.about-text p {
-    font-size: 1.2em;
-    color: #333;
-    padding: 10px 80px;
-}
-
-/* Estilo do menu dropdown */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #3586ff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    display: block;
-    text-align: center;
-    background-color: #02294b;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.dropdown-menu a:hover {
-    background-color: #1e4e8c;
-}
-
-/* Exibir menu dropdown ao clicar */
-.menu-btn.active + .dropdown-menu {
-    display: flex;
 }
