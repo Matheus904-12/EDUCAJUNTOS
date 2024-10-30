@@ -6,45 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educajuntos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header>
-        <h1>OLÁ, SEU NOME!</h1>
+        <h1>OLÁ, [SEU NOME]!</h1>
         <nav>
-            <button class="menu-btn">&#9776;</button>
-            <button class="help-btn">?</button>
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <div class="dropdown-menu">
                 <a href="#home">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#materias">Matérias</a>
                 <a href="#time">Time</a>
                 <a href="#contato">Contato</a>
-                <a href="mailto:seuemail@gmail.com">Ajuda</a>
+                <a href="mailto:support@educajuntos.com">Ajuda</a>
             </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>BEM-VINDO AO</h2>
-        <h3>EDUCAJUNTOS</h3>
-        <p>PLATAFORMA DE EDUCAÇÃO QUALIFICADA E GRATUITA</p>
-        <button class="btn">
-            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1"
-                class="sparkle">
-                <path
-                    d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
-                </path>
-            </svg>
+    <!-- CONTINUAÇÃO DO HEADER -->
 
+    <section class="hero">
+        <h2>SEJA BEM-VINDO AO</h2>
+        <h3>EDUCAJUNTOS</h3>
+        <p>A plataforma que democratiza a educação, oferecendo cursos e conteúdos de qualidade gratuitamente.</p>
+        <button class="btn">
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+                <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+            </svg>
             <span class="text">Vamos Começar!</span>
         </button>
         <div class="hero-image">
             <img src="../image/1.png" alt="Imagem ilustrativa de pessoas estudando">
         </div>
-
     </section>
 
+    <!-- SOBRE NÓS -->
 
     <section class="about">
         <div class="about-content">
@@ -73,29 +76,187 @@
         <br>
         <br>
 
-        <section class="categories">
-            <div class="category-card">
-                <img src="../image/2.png" alt="Matemática">
-                <p>Matemática</p>
-                <br>
+        <!-- CATEGORIAS -->
+
+        <section class="servicos" id="materias">
+            <div class="servicos-header">
+                <h2>Nossas Disciplinas</h2>
+                <p class="description">Aqui você encontra conteúdos de diversas áreas do conhecimento, projetados para atender a todas as necessidades educacionais.</p>
             </div>
-            <div class="category-card">
-                <img src="../image/3.png" alt="Biologia">
-                <p>Biologia</p>
-                <br>
-            </div>
-            <div class="category-card">
-                <img src="../image/5.png" alt="Filosofia">
-                <p>Filosofia</p>
-                <br>
-            </div>
-            <div class="category-card">
-                <img src="../image/6.png" alt="Educação Física">
-                <p>Educação Física</p>
-                <br>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image"><img src="../image/2.png" alt="Matemática"></div>
+                    <div class="card-content">
+                        <h3>Matemática</h3>
+                        <p>Aprenda matemática de forma prática e interativa, desde conceitos básicos até avançados.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"><img src="../image/3.png" alt="História"></div>
+                    <div class="card-content">
+                        <h3>História</h3>
+                        <p>Explore o passado e entenda como ele molda o presente com nossos cursos de história.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"><img src="../image/5.png" alt="Química"></div>
+                    <div class="card-content">
+                        <h3>Química</h3>
+                        <p>Desvende o mundo da química, com experiências e teorias que tornam o aprendizado mais dinâmico.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"><img src="../image/6.png" alt="Educação Física"></div>
+                    <div class="card-content">
+                        <h3>Educação Física</h3>
+                        <p>Cuide do corpo e da mente com nossos conteúdos de educação física e saúde.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- COMENTARIOS -->
+    <div id="page" class="site">
+        <div class="container">
+            <div class="testi">
+                <div class="head">
+                    <h3>Comentários</h3>
+                    <p>Avaliações dos usuários que utilizaram nossa plataforma</p>
+                </div>
+                <div class="body swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../image/people.jpg" alt="Usuário 1">
+                                </div>
+                                <div class="aside">
+                                    <p>A plataforma Educajuntos transformou minha maneira de aprender. Excelente
+                                        conteúdo!</p>
+                                    <div class="name">
+                                        <h4>Maria Silva</h4>
+                                        <p>Estudante de Matemática</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../image/people.jpg" alt="Usuário 2">
+                                </div>
+                                <div class="aside">
+                                    <p>Ótima plataforma! Me ajudou a conquistar novas habilidades.</p>
+                                    <div class="name">
+                                        <h4>João Pereira</h4>
+                                        <p>Desenvolvedor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="wrapper">
+                                <div class="thumbnail">
+                                    <img src="../image/people.jpg" alt="Usuário 2">
+                                </div>
+                                <div class="aside">
+                                    <p>Ótima plataforma! Me ajudou a conquistar novas habilidades.</p>
+                                    <div class="name">
+                                        <h4>João Pereira</h4>
+                                        <p>Desenvolvedor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Adicione mais slides conforme necessário -->
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<h4>Entre em </h4>
+
+    <div class="container-">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <img src="img/location.png" class="icon" alt="" />
+                <p>92 Cherry Drive Uniondale, NY 11553</p>
+              </div>
+              <div class="information">
+                <img src="img/email.png" class="icon" alt="" />
+                <p>lorem@ipsum.com</p>
+              </div>
+              <div class="information">
+                <img src="img/phone.png" class="icon" alt="" />
+                <p>123-456-789</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Send" class="btnn" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <!-- FOOTER -->
 
     <footer class="footer">
         <div class="waves">
@@ -128,33 +289,29 @@
         </ul>
         <p>&copy;2024 EDUCAJUNTOS | Todos os Direitos Reservados</p>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // Redireciona para a tela de login ao clicar no botão "Vamos Começar"
-        function goToLogin() {
-            window.location.href = "tela-de-login.html"; // Substitua com o caminho correto da sua página de login
-        }
-
-        // Controla o dropdown do menu hamburguer
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuBtn = document.querySelector(".menu-btn");
-            const dropdownMenu = document.querySelector(".dropdown-menu");
-
-            menuBtn.addEventListener("click", () => {
-                // Alterna a visibilidade do menu dropdown
-                if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
-                    dropdownMenu.style.display = "flex";
-                    dropdownMenu.style.flexDirection = "column";
-                    dropdownMenu.style.gap = "10px";
-                } else {
-                    dropdownMenu.style.display = "none";
-                }
-            });
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            speed: 600, // Velocidade da transição em milissegundos (0.6 segundos)
+            autoplay: {
+                delay: 3000, // Tempo em que cada slide ficará visível antes da troca (3 segundos)
+                disableOnInteraction: false, // Continua o autoplay após interação
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
-    </script>
 
+    </script>
 
 </body>
 
