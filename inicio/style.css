@@ -107,12 +107,11 @@ nav {
     margin-bottom: 100px;
 }
 
-.produtos-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-top: -90px;
+.servicos-header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .servicos h2 {
@@ -126,12 +125,6 @@ nav {
     max-width: 600px;
     margin: 0;
     margin-right: 190px;
-}
-.description2 {
-    font-size: 1.2em;
-    max-width: 600px;
-    margin: 0;
-    margin-right: 320px;
 }
 
 .cards-container {
@@ -245,7 +238,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: -20%;
 }
 
 .social-icon,
@@ -388,57 +381,13 @@ nav {
     padding: 10px 80px;
 }
 
-/* Estilo do menu dropdown */
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #3586ff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.dropdown-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-    display: block;
-    text-align: center;
-    background-color: #02294b;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.dropdown-menu a:hover {
-    background-color: #1e4e8c;
-}
-
-/* Exibir menu dropdown ao clicar */
-.menu-btn.active + .dropdown-menu {
-    display: flex;
-}
-
 
 /* Comentarios */ 
 
-.site {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-}
-
 .container {
-    max-width: 1100px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+    margin-left: 158px;
+    width: 39.9%;
+    height: 100px;    
 }
 
 .testi {
@@ -518,85 +467,180 @@ nav {
     background-color: #334db3;
     opacity: 1;
 }
-/* Menu Hamburguer */
 
-.burger {
-    position: relative;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: block;
-    top: 20px;
-    right: 70px;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 3.5px;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
+
+/* MENU HAMBURGUER */
+
+.menu {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: bold;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+  right: 45px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.menu .link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 36px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fbba20;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .item .submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  border-radius: 0 0 16px 16px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  pointer-events: none;
+  list-style: none;
+  background-color: #02294b;
+}
+
+.menu .item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  border-color: #ffffff;
+}
+
+.menu .item:hover .link {
+  color: #ffffff;
+  border-radius: 16px 16px 0 0;
+}
+
+.menu .item:hover .link::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.menu .item:hover .link svg {
+  fill: #ffffff;
+  transform: rotate(-180deg);
+}
+
+.submenu .submenu-item {
+  width: 100%;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-item:last-child .submenu-link {
+  border-bottom: none;
+}
+
+.submenu .submenu-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  width: 100%;
+  height: 100%;
+  background-color: #fbba20;
+  z-index: -1;
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.submenu .submenu-link:hover {
+  color: #ffffff;
+}
+
 
 /* CONTATO */
 
-.container- {
+.produtos-header {
+  margin-right: 13%;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: -90px;
+}
+
+.description2 {
+  font-size: 1.2em;
+  margin-left: 15%;
+  text-align: center;
+
+}
+
+.container2 {
     position: relative;
-    width: 100%;
     min-height: 100vh;
     padding: 2rem;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 48.7%;
+    bottom: 305px;
   }
   
   .form {
-    width: 100%;
+    width: 83.5%;
+    height: 400.8px;
     max-width: 820px;
     background-color: #fff;
     border-radius: 10px;
@@ -611,20 +655,7 @@ nav {
     background-color: #334db3;
     position: relative;
   }
-  
-  .circle.one {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-  }
-  
-  .circle.two {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
-  }
+
   
   .contact-form:before {
     content: "";
@@ -673,7 +704,7 @@ nav {
   
   textarea.input {
     padding: 0.8rem 1.2rem;
-    min-height: 150px;
+    min-height: 100px;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
@@ -784,57 +815,4 @@ nav {
     font-size: 0.95rem;
   }
   
-  .icon {
-    width: 28px;
-    margin-right: 0.7rem;
-  }
   
-  .social-media {
-    padding: 2rem 0 0 0;
-  }
-  
-  .social-media p {
-    color: #333;
-  }
-  
-  .social-icons {
-    display: flex;
-    margin-top: 0.5rem;
-  }
-  
-  .social-icons a {
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    background: linear-gradient(45deg,#FFB920, #334db3);
-    color: #fff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 0.5rem;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    transform: scale(1.05);
-  }
-  
-  .contact-info:before {
-    content: "";
-    position: absolute;
-    width: 110px;
-    height: 100px;
-    border: 22px solid #334db3;
-    border-radius: 50%;
-    bottom: -77px;
-    right: 50px;
-    opacity: 0.3;
-  }
-  
-  .square {
-    position: absolute;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(181%, 11%);
-    opacity: 0.2;
-  }

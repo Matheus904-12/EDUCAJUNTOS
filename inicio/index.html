@@ -13,20 +13,35 @@
     <header>
         <h1>OLÁ, [SEU NOME]!</h1>
         <nav>
-            <label class="burger" for="burger">
-                <input type="checkbox" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <div class="dropdown-menu">
-                <a href="#home">Início</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#materias">Matérias</a>
-                <a href="#time">Time</a>
-                <a href="#contato">Contato</a>
-                <a href="mailto:support@educajuntos.com">Ajuda</a>
+            <div class="menu">
+                <div class="item">
+                    <a href="#" class="link">
+                        <span> Serviços </span>
+                        <svg viewBox="0 0 360 360" xml:space="preserve">
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_225_"
+                                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="submenu">
+                        <div class="submenu-item">
+                            <a href="#" class="submenu-link"> Gerar </a>
+                        </div>
+                        <div class="submenu-item">
+                            <a href="#" class="submenu-link"> Pesquisa </a>
+                        </div>
+                        <div class="submenu-item">
+                            <a href="#" class="submenu-link"> Chat </a>
+                        </div>
+                        <div class="submenu-item">
+                            <a href="#" class="submenu-link"> Resultados </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </nav>
     </header>
 
@@ -37,8 +52,11 @@
         <h3>EDUCAJUNTOS</h3>
         <p>A plataforma que democratiza a educação, oferecendo cursos e conteúdos de qualidade gratuitamente.</p>
         <button class="btn">
-            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
-                <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+            <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1"
+                class="sparkle">
+                <path
+                    d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z">
+                </path>
             </svg>
             <span class="text">Vamos Começar!</span>
         </button>
@@ -81,7 +99,8 @@
         <section class="servicos" id="materias">
             <div class="servicos-header">
                 <h2>Nossas Disciplinas</h2>
-                <p class="description">Aqui você encontra conteúdos de diversas áreas do conhecimento, projetados para atender a todas as necessidades educacionais.</p>
+                <p class="description">Aqui você encontra conteúdos de diversas áreas do conhecimento, projetados para
+                    atender a todas as necessidades educacionais.</p>
             </div>
             <div class="cards-container">
                 <div class="card">
@@ -102,7 +121,8 @@
                     <div class="card-image"><img src="../image/5.png" alt="Química"></div>
                     <div class="card-content">
                         <h3>Química</h3>
-                        <p>Desvende o mundo da química, com experiências e teorias que tornam o aprendizado mais dinâmico.</p>
+                        <p>Desvende o mundo da química, com experiências e teorias que tornam o aprendizado mais
+                            dinâmico.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -115,6 +135,16 @@
             </div>
         </section>
     </main>
+
+    <section class="servicos">
+        <div class="produtos-header">
+            <h2>Depoimentos e Contato</h2>
+            <p class="description2">Na Educajuntos, valorizamos o feedback dos alunos e estamos sempre prontos para
+                ajudar. Confira os depoimentos de quem já usa nossa plataforma e veja como nossos conteúdos têm feito a
+                diferença. Se precisar de ajuda ou tiver dúvidas, entre em contato com nossa equipe pelo formulário ou
+                por e-mail.</p>
+        </div>
+    </section>
 
     <!-- COMENTARIOS -->
     <div id="page" class="site">
@@ -177,84 +207,66 @@
         </div>
     </div>
 
-<h4>Entre em </h4>
+    <!-- CONTATO -->
 
-    <div class="container-">
+    <div class="container2">
         <span class="big-circle"></span>
         <img src="img/shape.png" class="square" alt="" />
         <div class="form">
-          <div class="contact-info">
-            <h3 class="title">Let's get in touch</h3>
-            <p class="text2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-              dolorum adipisci recusandae praesentium dicta!
-            </p>
-  
-            <div class="info">
-              <div class="information">
-                <img src="img/location.png" class="icon" alt="" />
-                <p>92 Cherry Drive Uniondale, NY 11553</p>
-              </div>
-              <div class="information">
-                <img src="img/email.png" class="icon" alt="" />
-                <p>lorem@ipsum.com</p>
-              </div>
-              <div class="information">
-                <img src="img/phone.png" class="icon" alt="" />
-                <p>123-456-789</p>
-              </div>
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="img/location.png" class="icon" alt="" />
+                        <p>92 Cherry Drive Uniondale, NY 11553</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/email.png" class="icon" alt="" />
+                        <p>lorem@ipsum.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="img/phone.png" class="icon" alt="" />
+                        <p>123-456-789</p>
+                    </div>
+                </div>
+                <input type="submit" value="Send" class="btnn" />
             </div>
-  
-            <div class="social-media">
-              <p>Connect with us :</p>
-              <div class="social-icons">
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
+
+            <div class="contact-form">
+
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+
+                </form>
             </div>
-          </div>
-  
-          <div class="contact-form">
-            <span class="circle one"></span>
-            <span class="circle two"></span>
-  
-            <form action="index.html" autocomplete="off">
-              <h3 class="title">Contact us</h3>
-              <div class="input-container">
-                <input type="text" name="name" class="input" />
-                <label for="">Username</label>
-                <span>Username</span>
-              </div>
-              <div class="input-container">
-                <input type="email" name="email" class="input" />
-                <label for="">Email</label>
-                <span>Email</span>
-              </div>
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" />
-                <label for="">Phone</label>
-                <span>Phone</span>
-              </div>
-              <div class="input-container textarea">
-                <textarea name="message" class="input"></textarea>
-                <label for="">Message</label>
-                <span>Message</span>
-              </div>
-              <input type="submit" value="Send" class="btnn" />
-            </form>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- FOOTER -->
 
@@ -291,7 +303,8 @@
     </footer>
 
     <!-- SCRIPTS -->
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
