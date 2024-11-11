@@ -38,3 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Função para abrir o chat
+function openChat() {
+    document.getElementById("chatPopup").style.display = "block";
+    document.body.classList.add("blur-background");
+}
+
+// Função para fechar o chat
+function closeChat() {
+    document.getElementById("chatPopup").style.display = "none";
+    document.body.classList.remove("blur-background");
+}
