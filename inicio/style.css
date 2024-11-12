@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F8F4EB;
+    background-color: #fff8f8;
     color: #333;
 }
 
@@ -387,7 +387,8 @@ nav {
 .container {
     margin-left: 158px;
     width: 39.9%;
-    height: 100px;    
+    height: 125px;
+    margin-bottom: 15px;    
 }
 
 .testi {
