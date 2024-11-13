@@ -78,3 +78,18 @@ h2 {
     color: #333;
 }
 
+.loading-icon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.loading-icon img {
+    width: 80px; /* Tamanho do ícone decorativo */
+    opacity: 0.7;
+}
